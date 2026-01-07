@@ -103,3 +103,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# ye csv file ko train or test dataset me split kr rha hai but ye train or test nhi kr rha hai 
