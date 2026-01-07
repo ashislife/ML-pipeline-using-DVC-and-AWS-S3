@@ -31,6 +31,7 @@ file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
+# ye param.yaml file se parameters read kr rha hai
 def load_params(params_path: str) -> dict:
     """Load parameters from a YAML file."""
     try:
@@ -89,9 +90,9 @@ def save_data(train_data: pd.DataFrame, test_data: pd.DataFrame, data_path: str)
 
 def main():
     try:
-        # params = load_params(params_path='params.yaml')
-        # test_size = params['data_ingestion']['test_size']
-        test_size = 0.2
+        params = load_params(params_path='params.yaml')
+        test_size = params['data_ingestion']['test_size']
+        # test_size = 0.2
         data_path = 'https://raw.githubusercontent.com/ashislife/ML-pipeline-using-DVC-and-AWS-S3/refs/heads/main/experiments/spam.csv'
         df = load_data(data_url=data_path)
         final_df = preprocess_data(df)

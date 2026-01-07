@@ -35,7 +35,7 @@ Expermients with DVC:
 
 -------------------------------------------------------------------------------
 
-params.yaml setup:
+params.yaml setup:(in all src file )
 1> import yaml
 2> add func:
 def load_params(params_path: str) -> dict:
