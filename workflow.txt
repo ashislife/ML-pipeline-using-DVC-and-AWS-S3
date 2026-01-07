@@ -71,6 +71,7 @@ params = load_params('params.yaml')['model_building']
 
 -------------------------------------------------------------------------------
 
+#experiment tracking (basicly ye jab hm parameter ko update karte hai to pichle record ko dekhne ke liye use krte hai  )
 dvclive code block:
 1> import dvclive and yaml:
 from dvclive import Live
